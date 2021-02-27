@@ -1,0 +1,11 @@
+<div infiniteScroll [infiniteScrollDistance]=2 (scrolled)='onScroll($event)' [scrollWindow]='false' class="container">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Rechercher..." (input)='onInput($event)'>
+    </mat-form-field>
+    <mat-nav-list>
+        <li *ngFor="let pokemon of pokemons" (click)="onClick(pokemon.id)">
+            <img class='sprite' src="assets/img/sprites/{{pokemon.id}}.png">
+            <a>{{pokemon.id}}. {{pokemon.name }}</a>
+        </li>
+    </mat-nav-list>
+</div>

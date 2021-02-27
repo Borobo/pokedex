@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: rgb(110, 110, 110);
+}
+
+li>a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+.sprite{
+    width: 50px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    overflow:auto;
+    height: calc(100% - 8px);
+    padding-left: 15px;
+    padding-right: 15px;
+}

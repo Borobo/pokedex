@@ -1,0 +1,8 @@
+<mat-sidenav-container class="container" fullscreen>
+    <mat-sidenav mode="side" opened>
+        <app-pokemon-list (idPokemon)="pokemonSelectorId($event)"></app-pokemon-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-pokemon-detail [id]='idPokemon'></app-pokemon-detail>
+    </mat-sidenav-content>
+</mat-sidenav-container>

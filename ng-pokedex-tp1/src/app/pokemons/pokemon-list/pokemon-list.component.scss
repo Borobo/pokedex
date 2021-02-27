@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+li>a {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+.sprite{
+    width: 50px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}

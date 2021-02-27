@@ -1,0 +1,12 @@
+<div class="container">
+    <mat-form-field class="example-full-width">
+        <mat-label>Login</mat-label>
+        <input matInput [(ngModel)]="this.login">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type='password' [(ngModel)]="this.passwd">
+    </mat-form-field>
+    <button mat-stroked-button (click)='onClick()'>Connexion</button>
+</div>

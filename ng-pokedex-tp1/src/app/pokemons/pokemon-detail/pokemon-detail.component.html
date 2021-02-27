@@ -1,0 +1,38 @@
+<button routerLink='/'>Retour à la liste</button>
+
+
+<mat-card *ngIf='pokemon.id' class="container">
+    <mat-grid-list cols=2 rowHeight=65px>
+        <mat-grid-tile [rowspan]=3 class="center">
+            <img src="assets/img/official-artwork/{{pokemon.id}}.png">
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div><b>{{pokemon.name}} </b>
+                <button (click)='playSound(pokemon.id)' mat-icon-button>
+                    <mat-icon>play_circle_outline</mat-icon>
+                    <audio src="assets/audio/{{pokemon.id}}.mp3" autoplay></audio>
+                </button>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-chip-list>
+                <mat-chip *ngFor="let type of pokemon.types">
+                    {{type}}
+                </mat-chip>
+            </mat-chip-list>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div>Taille: {{pokemon.height}} m</div>
+        </mat-grid-tile>
+        <mat-grid-tile class="center">
+            <div>No. {{pokemon.id}}</div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div>Poids: {{pokemon.weight}} kg</div>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]=2>
+            <div>{{pokemon.description}}</div>
+        </mat-grid-tile>
+    </mat-grid-list>
+
+</mat-card>

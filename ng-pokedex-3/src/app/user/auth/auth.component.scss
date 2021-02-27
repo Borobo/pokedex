@@ -1,0 +1,19 @@
+.container{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20pt;
+    min-width: 500px;
+}
+
+mat-form-field{
+    width: 100%;
+}   
+
+button {
+    width: 100%;
+    font-size: 15pt;
+    margin-top: 20px;
+}
